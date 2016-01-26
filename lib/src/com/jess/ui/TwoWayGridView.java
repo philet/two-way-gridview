@@ -36,6 +36,7 @@
 package com.jess.ui;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
@@ -273,6 +274,7 @@ public class TwoWayGridView extends TwoWayAbsListView {
 
 
 
+	@SuppressLint("WrongCall")
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
