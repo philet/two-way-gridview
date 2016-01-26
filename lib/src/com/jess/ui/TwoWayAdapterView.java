@@ -779,11 +779,12 @@ public abstract class TwoWayAdapterView<T extends Adapter> extends ViewGroup {
 		return (adapter == null || position < 0) ? INVALID_ROW_ID : adapter.getItemId(position);
 	}
 
+	/*
 	@Override
 	public void setOnClickListener(OnClickListener l) {
 		throw new RuntimeException("Don't call setOnClickListener for an AdapterView. "
 				+ "You probably want setOnItemClickListener instead");
-	}
+	}*/
 
 	/**
 	 * Override to prevent freezing of any views created by the adapter.
